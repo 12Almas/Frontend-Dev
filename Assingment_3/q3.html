@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <h1>Register for Your Course</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="course">Select a Course:</label><br>
+            <select id="course" name="course">
+                <option value="data-science">Data Science Fundamentals</option>
+                <option value="web-dev" selected>Full-Stack Web Development</option>
+                <option value="ai-ml">AI and Machine Learning</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <h2>Available Course Schedules</h2>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday, Wednesday, Friday</td>
+                <td>7:00 PM - 9:00 PM IST</td>
+                <td>Mr. Ankit Sharma</td>
+            </tr>
+            <tr>
+                <td>Tuesday, Thursday</td>
+                <td>10:00 AM - 12:00 PM IST</td>
+                <td>Ms. Priya Singh</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
