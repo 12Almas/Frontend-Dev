@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5: Advanced Selectors</title>
+    <link rel="stylesheet" href="q5.css">
+</head>
+<body>
+    <main>
+        <section class="list-section">
+            <h2>List for Pseudo-classes</h2>
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+                <li>Fifth Item</li>
+            </ul>
+        </section>
+        
+        <section class="links-section">
+            <h2>Links for Attribute Selectors</h2>
+            <a href="https://google.com" target="_blank">Secure Google Link</a>
+            <a href="http://example.com">Insecure Example Link</a>
+            <a href="#internal-link">Internal Page Link</a>
+        </section>
+
+        <section class="combinator-section">
+            <h2>Combinator Demo</h2>
+            <div class="ancestor">
+                <h2>Child (>)</h2>
+                <p>Child Paragraph</p>
+                <div>
+                    <p>Descendant (space) Paragraph</p>
+                </div>
+            </div>
+            
+            <h3>Adjacent Sibling (+)</h3>
+            <p>This paragraph is styled.</p>
+            <p>This one is not.</p>
+            
+            <h4>General Sibling (~)</h4>
+            <div>A div</div>
+            <p>This paragraph is styled.</p>
+            <span>A span</span>
+            <p>This paragraph is also styled.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Attribute & Focus Demo</h2>
+            <input type="text" placeholder="Text input [type='text']">
+            <input type="email" placeholder="Email input">
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.box-1 {
+    width: 300px;
+    height: 25%;
+    background-color: #c0392b;
+}
+
+.box-2 {
+    width: 20em;
+    height: 40vh;
+    background-color: #2980b9;
+}
+
+.box-3 {
+    width: 300px;
+    max-width: 250px;
+    height: 200px;
+    min-height: 150px;
+    background-color: #27ae60;
+    overflow: auto;
+}

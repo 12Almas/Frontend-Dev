@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8: Box Model</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <main>
+        <section class="demo-wrapper">
+            <h2><code>box-sizing: content-box</code> (Default)</h2>
+            <p>Total Width = width + padding + border</p>
+            <div class="box content-box">
+                <div class="label">Width: 250px</div>
+            </div>
+            <p class="calc"><strong>Total Width:</strong> 250px + (40px * 2) + (10px * 2) = <strong>350px</strong></p>
+        </section>
+
+        <section class="demo-wrapper">
+            <h2><code>box-sizing: border-box</code></h2>
+            <p>Total Width = width</p>
+            <div class="box border-box">
+                <div class="label">Width: 250px</div>
+            </div>
+            <p class="calc"><strong>Total Width:</strong> <strong>250px</strong></p>
+        </section>
+    </main>
+
+    <aside class="key">
+        <div class="key-item"><span class="color-box margin"></span> Margin</div>
+        <div class="key-item"><span class="color-box border"></span> Border</div>
+        <div class="key-item"><span class="color-box padding"></span> Padding</div>
+        <div class="key-item"><span class="color-box content"></span> Content</div>
+    </aside>
+</body>
+</html>
