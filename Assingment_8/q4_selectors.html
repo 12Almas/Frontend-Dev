@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4: CSS Selectors</title>
+    <link rel="stylesheet" href="q4_style.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">CSS Selectors Practice</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Element, Class, and ID</h2>
+            <p>This is a standard paragraph (element selector).</p>
+            <p class="highlight">This paragraph has a .highlight class.</p>
+            <p>This is another standard paragraph.</p>
+        </section>
+
+        <section>
+            <h2>Attribute Selector</h2>
+            <p>
+                This link goes to Google in a new tab: 
+                <a href="https://google.com" target="_blank">Google</a>.
+            </p>
+            <p>
+                This link just goes to the top: 
+                <a href="#">Home</a>.
+            </p>
+        </section>
+
+        <section class="combinators">
+            <h2>Combinator Selectors</h2>
+            <article>
+                <p>This 'p' is a descendant (and child) of 'article'.</p>
+                <div>
+                    <p>This 'p' is also a descendant, but not a direct child.</p>
+                </div>
+            </article>
+
+            <h3>Adjacent Sibling ( + )</h3>
+            <p>This 'p' is the element selected by (h3 + p).</p>
+            <p>This 'p' is not selected.</p>
+            
+            <h3>General Sibling ( ~ )</h3>
+            <p>This 'p' is selected by (h3 ~ p).</p>
+            <ul>
+                <li>List item (not a sibling p)</li>
+            </ul>
+            <p>This 'p' is also selected by (h3 ~ p).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is the footer.</p>
+    </footer>
+</body>
+</html>

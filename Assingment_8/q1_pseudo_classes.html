@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1: Pseudo-Classes</title>
+    <link rel="stylesheet" href="q1_style.css">
+</head>
+<body>
+    <header>
+        <h1>Demonstrating Pseudo-Classes</h1>
+    </header>
+    <main class="container">
+        <section class="example-card">
+            <h2>Link States</h2>
+            <a href="#" class="my-link">Hover, Focus, & Active</a>
+            <p>
+                <code>:hover</code> (blue), 
+                <code>:focus</code> (outline), 
+                <code>:active</code> (red).
+            </p>
+        </section>
+
+        <section class="example-card">
+            <h2>Button States</h2>
+            <button class="my-button">Hover & Active Me</button>
+            <p>
+                <code>:hover</code> (darker), 
+                <code>:active</code> (scaled down).
+            </p>
+        </section>
+
+        <section class="example-card">
+            <h2>List :nth-child()</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+            <p><code>:nth-child(odd)</code> has a light background.</p>
+        </section>
+    </main>
+</body>
+</html>

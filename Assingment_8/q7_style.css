@@ -1,0 +1,128 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+}
+
+.ui-card {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.ui-card h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+input[type="search"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1; 
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-toggle {
+    width: 100%;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.dropdown-toggle:hover {
+    background: #f8f8f8;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 10;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+}
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

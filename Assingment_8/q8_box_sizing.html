@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8: Box-Sizing</title>
+    <link rel="stylesheet" href="q8_style.css">
+</head>
+<body>
+    <header>
+        <h1>Comparing <code>box-sizing</code></h1>
+    </header>
+
+    <main class="container">
+        <section class="box content-box">
+            <h2><code>box-sizing: content-box;</code> (Default)</h2>
+            <p>
+                The <code>width</code> (250px) only applies to the content.
+                The padding and border are added *outside* of that width.
+            </p>
+            <p>
+                <strong>Total Width:</strong><br>
+                250px (width) + 40px (padding) + 20px (border) = <strong>310px</strong>
+            </p>
+        </section>
+
+        <section class="box border-box">
+            <h2><code>box-sizing: border-box;</code></h2>
+            <p>
+                The <code>width</code> (250px) includes the content, padding,
+                and border. The browser shrinks the content area to fit.
+            </p>
+            <p>
+                <strong>Total Width:</strong><br>
+                The box is exactly <strong>250px</strong> wide, as specified.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.example-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    flex-basis: 300px; 
+}
+
+.my-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.my-link:hover {
+    background-color: #2980b9;
+}
+
+.my-link:focus {
+    outline: 3px solid #f39c12;
+}
+
+.my-link:active {
+    background-color: #e74c3c;
+    transform: scale(0.98);
+}
+
+.my-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #27ae60;
+}
+
+.my-button:active {
+    transform: scale(0.95);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+li:nth-child(odd) {
+    background-color: #ecf0f1;
+}

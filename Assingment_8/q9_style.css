@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-grow {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-grow:hover {
+    background-color: #2980b9;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+}
+
+.btn-spin {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-spin:hover {
+    background-color: #c0392b;
+    transform: rotate(10deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-pulse {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-pulse:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(46, 204, 113, 0.7);
+}
