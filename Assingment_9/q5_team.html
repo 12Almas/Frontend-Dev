@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 Team</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background: yellow;
+        }
+
+        .info {
+            display: none;
+            font-size: 0.8em;
+            color: grey;
+        }
+
+        .department {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="department">
+        <h2 class="dept-title">Engineering Dept</h2>
+        <div class="manager">Manager: Alice</div>
+        <div class="employee">Dev: Bob <span class="info">Email: bob@test.com</span></div>
+        <div class="employee">Dev: Charlie <span class="info">Email: charlie@test.com</span></div>
+    </div>
+
+    <div class="department">
+        <h2 class="dept-title">Sales Dept</h2>
+        <div class="manager">Manager: Dave</div>
+        <div class="employee">Rep: Eve <span class="info">Email: eve@test.com</span></div>
+        <div class="employee">Rep: Frank <span class="info">Email: frank@test.com</span></div>
+    </div>
+
+    <button id="collapse-btn">Collapse/Expand Team</button>
+
+    <script src="q5_team.js"></script>
+</body>
+
+</html>

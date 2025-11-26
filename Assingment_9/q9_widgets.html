@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q9 Multi-Widgets</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var jq1 = jQuery.noConflict(); 
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var jq2 = jQuery.noConflict(); 
+    </script>
+</head>
+
+<body>
+    <h2>Multi-Version jQuery Dashboard</h2>
+
+    <div id="widget1" style="padding: 20px; border: 1px solid black; margin: 10px;">
+        Carousel Widget (Managed by v1.12.4)
+    </div>
+
+    <div id="widget2" title="Hover over me!" style="padding: 20px; border: 1px solid black; margin: 10px;">
+        Notification Widget (Managed by v3.6.0)
+    </div>
+
+    <script src="q9_widgets.js"></script>
+</body>
+
+</html>

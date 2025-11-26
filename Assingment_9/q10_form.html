@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q10 Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .error-border {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Register</h2>
+    <form id="reg-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="pass" placeholder="Password (Min 8 chars)">
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="msg"></div>
+
+    <script src="q10_form.js"></script>
+</body>
+
+</html>

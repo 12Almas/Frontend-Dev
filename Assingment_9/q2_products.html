@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q2 Products</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .details {
+            display: none;
+            color: gray;
+        }
+
+        .selected {
+            border: 2px solid blue;
+        }
+
+        .highlight-bg {
+            background-color: #f0f8ff;
+        }
+
+        div[data-discount="true"] {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product" data-discount="true" data-stock="10">
+        <h3>Laptop</h3>
+        <button class="fav-btn">Favorite &#9825;</button>
+        <p class="details">High performance laptop.</p>
+    </div>
+
+    <div class="product" data-discount="false" data-stock="0">
+        <h3>Phone</h3>
+        <button class="fav-btn">Favorite &#9825;</button>
+        <p class="details">Latest smart phone.</p>
+    </div>
+
+    <div class="product" data-discount="true" data-stock="5">
+        <h3>Tablet</h3>
+        <button class="fav-btn">Favorite &#9825;</button>
+        <p class="details">Lightweight tablet.</p>
+    </div>
+
+    <div class="product" data-discount="false" data-stock="15">
+        <h3>Monitor</h3>
+        <button class="fav-btn">Favorite &#9825;</button>
+        <p class="details">4K Display.</p>
+    </div>
+
+    <div class="product" data-discount="true" data-stock="2">
+        <h3>Headphones</h3>
+        <button class="fav-btn">Favorite &#9825;</button>
+        <p class="details">Noise canceling.</p>
+    </div>
+
+    <script src="q2_products.js"></script>
+</body>
+
+</html>
