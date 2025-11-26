@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q1 Product List</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            margin-right: 10px;
+            flex-grow: 1;
+        }
+
+        button {
+            margin-left: 5px;
+        }
+
+        .editing {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="productInput" placeholder="Enter product name">
+    <button id="addBtn">Add Product</button>
+    <ul id="productList"></ul>
+    <script src="q1_productList.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q9 Form Blocker</title>
+    <style>
+        .error {
+            color: red;
+            margin-left: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm">
+        <div>
+            <input type="text" id="name" placeholder="Name">
+            <span id="nameErr" class="error">Name is required</span>
+        </div>
+        <div>
+            <input type="text" id="email" placeholder="Email">
+            <span id="emailErr" class="error">Valid email required (@)</span>
+        </div>
+        <div>
+            <input type="password" id="pass" placeholder="Password">
+            <span id="passErr" class="error">Min 6 chars required</span>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <p id="successMsg" style="color:green; display:none;">Form Submitted Successfully</p>
+    <script src="q9_formBlocker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q6 Table Filter</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="searchBox" placeholder="Search...">
+    <br><br>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>CSE</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>ECE</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>MECH</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>CSE</td>
+                <td>9.2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="noResults" style="display:none;">No results found</p>
+    <script src="q6_tableFilter.js"></script>
+</body>
+
+</html>

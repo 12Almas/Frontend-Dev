@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q8 Dropdown</title>
+    <style>
+        #dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        #options {
+            display: none;
+            position: absolute;
+            background: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+            z-index: 1;
+            border: 1px solid #ccc;
+        }
+
+        .option {
+            padding: 12px 16px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .option:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dropdown">
+        <button id="dropBtn">Select Option</button>
+        <div id="options">
+            <div class="option">Option 1</div>
+            <div class="option">Option 2</div>
+            <div class="option">Option 3</div>
+        </div>
+    </div>
+    <script src="q8_dropdown.js"></script>
+</body>
+
+</html>

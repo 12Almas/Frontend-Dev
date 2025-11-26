@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 Gallery</title>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modalImg {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <img src="https://via.placeholder.com/150/FF0000" alt="Red">
+        <img src="https://via.placeholder.com/150/00FF00" alt="Green">
+        <img src="https://via.placeholder.com/150/0000FF" alt="Blue">
+        <img src="https://via.placeholder.com/150/FFFF00" alt="Yellow">
+        <img src="https://via.placeholder.com/150/00FFFF" alt="Cyan">
+        <img src="https://via.placeholder.com/150/FF00FF" alt="Magenta">
+    </div>
+
+    <div id="modal">
+        <img id="modalImg" src="">
+    </div>
+    <script src="q5_gallery.js"></script>
+</body>
+
+</html>
